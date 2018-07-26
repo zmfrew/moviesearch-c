@@ -26,7 +26,7 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary
 {
     NSString *title = dictionary[[ZMFMovie titleKey]];
-    float rating = [dictionary[[ZMFMovie ratingKey]] intValue];
+    float rating = [dictionary[[ZMFMovie ratingKey]] floatValue];
     NSString *overview = dictionary[[ZMFMovie overviewKey]];
     NSString *imageURLExtension = dictionary[[ZMFMovie imageURLExtensionKey]];
     

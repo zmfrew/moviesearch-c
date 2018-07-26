@@ -38,11 +38,11 @@
 - (void)retrieveMoviesWithSearchText:(NSString *)searchText completion:(void (^)(NSArray<ZMFMovie *> *))completion
 {
     NSURLComponents *urlComponents = [NSURLComponents componentsWithURL:[self baseURL] resolvingAgainstBaseURL:true];
-    NSURLQueryItem *apiKeyQuery = [NSURLQueryItem queryItemWithName:@"api_Key" value:@"c5c1f4910df19b60d4b5657cf2225704"];
+    NSURLQueryItem *apiKeyQuery = [NSURLQueryItem queryItemWithName:@"api_key" value:@"c5c1f4910df19b60d4b5657cf2225704"];
     NSURLQueryItem *languageQuery = [NSURLQueryItem queryItemWithName:@"language" value:@"en-US"];
     NSURLQueryItem *movieSearchQuery = [NSURLQueryItem queryItemWithName:@"query" value:searchText];
     urlComponents.queryItems = @[apiKeyQuery, languageQuery, movieSearchQuery];
-    
+    NSLog(@"%@",urlComponents.URL);
     [[[NSURLSession sharedSession] dataTaskWithURL:urlComponents.URL completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (error) {
             NSLog(@"Error occurred fetching movies: %@", error);
