@@ -12,6 +12,8 @@
 		B6A4CA37210A599C00C9DADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A4CA36210A599C00C9DADE /* Assets.xcassets */; };
 		B6A4CA3A210A599C00C9DADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A4CA38210A599C00C9DADE /* LaunchScreen.storyboard */; };
 		B6A4CA3D210A599C00C9DADE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A4CA3C210A599C00C9DADE /* main.m */; };
+		B6F15C6A210A5C120012E292 /* ZMFMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F15C69210A5C120012E292 /* ZMFMovie.m */; };
+		B6F15C6D210A5DAC0012E292 /* ZMFMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F15C6C210A5DAC0012E292 /* ZMFMovieController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,10 @@
 		B6A4CA39210A599C00C9DADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6A4CA3B210A599C00C9DADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6A4CA3C210A599C00C9DADE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6F15C68210A5C120012E292 /* ZMFMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFMovie.h; sourceTree = "<group>"; };
+		B6F15C69210A5C120012E292 /* ZMFMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFMovie.m; sourceTree = "<group>"; };
+		B6F15C6B210A5DAC0012E292 /* ZMFMovieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFMovieController.h; sourceTree = "<group>"; };
+		B6F15C6C210A5DAC0012E292 /* ZMFMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFMovieController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,8 @@
 		B6A4CA46210A59EC00C9DADE /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B6F15C6B210A5DAC0012E292 /* ZMFMovieController.h */,
+				B6F15C6C210A5DAC0012E292 /* ZMFMovieController.m */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -110,6 +118,8 @@
 		B6A4CA48210A59F500C9DADE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B6F15C68210A5C120012E292 /* ZMFMovie.h */,
+				B6F15C69210A5C120012E292 /* ZMFMovie.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -140,6 +150,7 @@
 		B6A4CA22210A599A00C9DADE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZMF;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Zachary Frew";
 				TargetAttributes = {
@@ -184,6 +195,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6F15C6D210A5DAC0012E292 /* ZMFMovieController.m in Sources */,
+				B6F15C6A210A5C120012E292 /* ZMFMovie.m in Sources */,
 				B6A4CA3D210A599C00C9DADE /* main.m in Sources */,
 				B6A4CA2F210A599A00C9DADE /* AppDelegate.m in Sources */,
 			);
